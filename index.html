@@ -137,12 +137,20 @@
         .social-links a {
             color: var(--white);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s;
             font-size: 1.2rem;
+            display: inline-block;
         }
 
-        .social-links a:hover {
-            color: var(--accent);
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            display: block;
+            transition: transform 0.3s;
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.15);
         }
 
         nav {
@@ -925,10 +933,10 @@
             </a>
             <div class="header-right">
                 <div class="social-links">
-                    <a href="https://www.facebook.com/multinr" target="_blank" title="Facebook">📘</a>
-                    <a href="https://www.youtube.com/@productionmultinr6655" target="_blank" title="YouTube">📺</a>
-                    <a href="https://www.linkedin.com/company/multinr/" target="_blank" title="LinkedIn">💼</a>
-                    <a href="https://www.instagram.com/multi_nr/" target="_blank" title="Instagram">📷</a>
+                    <a href="https://www.facebook.com/multinr" target="_blank" title="Facebook"><img src="icons/f.png" alt="Facebook"></a>
+                    <a href="https://www.youtube.com/@productionmultinr6655" target="_blank" title="YouTube"><img src="icons/y.png" alt="YouTube"></a>
+                    <a href="https://www.linkedin.com/company/multinr/" target="_blank" title="LinkedIn"><img src="icons/ed.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/multi_nr/" target="_blank" title="Instagram"><img src="icons/sta.png" alt="Instagram"></a>
                 </div>
                 <div class="lang-switcher">
                     <button class="lang-btn active" onclick="switchLang('ro')">RO</button>
